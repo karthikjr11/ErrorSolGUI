@@ -1,0 +1,16 @@
+ORA-06510: PL/SQL: unhandled user-defined exception 
+UOW ERROR
+ORA-01722: invalid number
+Error: Insufficient character string length
+ORA-20002: Two records inserted with same unique/primary key but different data result in key violation
+ORA-01840: input value not long enough for date format
+ORA-06508: PL/SQL: could not find program unit being called
+ORA-00913: too many values
+ORA-01438: value larger than specified precision allowed for this column
+ORA-01789: query block has incorrect number of result columns
+ORA-06502: PL/SQL: numeric or value error: character string buffer too small
+ORA-01790: expression must have same datatype as corresponding expression
+new error
+error
+err
+new
