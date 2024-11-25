@@ -11,3 +11,4 @@ In an union trasnfromation - if a target is mapped to 2 columns for the same sou
 This error may occurs either in Numeric or Varchar2 datatype columns. Because the incoming source data which is larger than the specified target length. Eg: The target column PRTRT having length of Varchar2(90). However, the source data having length >90 is trying to insert into the target column resulting data failure.Soln: 1) Source data need to be updated as per target's criteria.2) Specification need to be updated to increase the target column length.
 In Union transformation all expression must have same data type
 new solution
+sol
