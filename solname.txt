@@ -10,4 +10,3 @@ Data exceeded the target column length or if a character value is coming to the 
 In an union trasnfromation - if a target is mapped to 2 columns for the same source and no expression is mentioned for the same. We have to map one column from one source or give the expression for the same.
 This error may occurs either in Numeric or Varchar2 datatype columns. Because the incoming source data which is larger than the specified target length. Eg: The target column PRTRT having length of Varchar2(90). However, the source data having length >90 is trying to insert into the target column resulting data failure.Soln: Source data need to be updated as per target's criteria. Specification need to be updated to increase the target column length.
 In Union transformation all expression must have same data type
-Kindly close the application
