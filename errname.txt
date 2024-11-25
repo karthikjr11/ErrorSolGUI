@@ -1,4 +1,5 @@
-ORA-06510: PL/SQL: unhandled user-defined exception UOW ERROR
+ORA-06510: PL/SQL: unhandled user-defined exception
+UOW ERROR
 ORA-01722: invalid number
 Error: Insufficient character string length
 ORA-20002: Two records inserted with same unique/primary key but different data result in key violation
