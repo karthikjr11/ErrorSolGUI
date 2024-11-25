@@ -16,3 +16,4 @@ err
 new
 byee
 hello
+hi
