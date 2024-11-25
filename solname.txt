@@ -1,0 +1,18 @@
+Mostly the error will be occured in UOW Process type of the Table.Solution: After changing the UOW process, FULL INSTALL the clinical datamodel alone. Once the data model is success, try to manually check-in the Transformation alone. Then checkout the transformation again so that both datamodel and transformation are in sync and Normal Installation required for the transformation.
+This error will be found in the data model installation log- when there is an issue with the UOW type of a Table. If the UOW type is SUBJ & VISIT- the first 2 PK should be SUBJECTUUID and STUDYEVENTNUM (with the same order) and the SDTM Identifiers should be set for the applicable columns as Subject and Visit.
+1. A Varchar datatype column is mapped in the place of number datatype column. Check for the columns having Number datatype, If it is mapped with any Varchar2 datatype column then it should be replaced.2. Length of number target column is smaller than the source column.3. An expression is given for a Number Datatype column, if this expression is trying to return a Varchar value, this error may occur.
+1. Length specified for the given string is either exceeded/insufficient.2. In Unpivot/Pivot transformations please check if the codelist created in the DMW Library is having a length which lesser or equal to the column where we attach the codelist to.
+Look at the joining conditions first. Also,Check if the available PK Constraints are enough to make the records UNIQUE.Secondly, Error mostly due to the expression of 'xxSEQ' (Try to give expression in incremental order for UNION transformations)
+Data in DTC column is not in the preferred 'date' format (Data issue).Instead of having a 'date' value, the data is populated as a 'number' in the QSASSDTC of ERT_QS.QS_FLASH.
+If we add tables/new columns to an existing table, this kind of error occurs due to the objects created to different reference in backend.Solution: Normal installation with 'Regenerate programs' and job submission with force exc = yes.
+1. Check if two source columns added to a single target column.2. Check if the filter value is not given for any of the test variable.3. This error would be occurred either if same filter value is applied for different target columns(filter value should be unique for particular tests)
+Data exceeded the target column length or if a character value is coming to the numeric target column. (Data was refreshed with corrected values)
+In an union trasnfromation - if a target is mapped to 2 columns for the same source and no expression is mentioned for the same. We have to map one column from one source or give the expression for the same.
+This error may occurs either in Numeric or Varchar2 datatype columns. Because the incoming source data which is larger than the specified target length. Eg: The target column PRTRT having length of Varchar2(90). However, the source data having length >90 is trying to insert into the target column resulting data failure.Soln: 1) Source data need to be updated as per target's criteria.2) Specification need to be updated to increase the target column length.
+In Union transformation all expression must have same data type
+hello
+hi
+sol
+soll
+sol1
+solution
