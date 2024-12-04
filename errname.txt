@@ -12,3 +12,4 @@ ORA-06502: PL/SQL: numeric or value error: character string buffer too small
 ORA-01790: expression must have same datatype as corresponding expression
 new error
 error neww
+errorneww11
