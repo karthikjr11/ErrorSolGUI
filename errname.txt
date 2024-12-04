@@ -13,3 +13,4 @@ ORA-01790: expression must have same datatype as corresponding expression
 new error
 error neww
 errorneww11
+single row sub qurey error 
