@@ -13,3 +13,4 @@ In Union transformation all expression must have same data type
 new solution
 new solution
 solution11
+try to delte the data model 
